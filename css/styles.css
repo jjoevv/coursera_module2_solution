@@ -1,0 +1,109 @@
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  width: 90%;
+  height: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+}
+
+.menu {
+  width: 100%;
+}
+
+h2{
+  float: right;
+  position: relative;
+  right: 5%;
+  top: 16px;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;    
+  border: 2px solid black;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.item1 h2{
+  background-color: pink;
+}
+
+.item2 h2{
+  background-color: red;
+  color: white;
+}
+
+.item3 h2{
+  background-color: yellow;
+}
+
+.content{
+  padding: 40px 10px 10px 10px;
+  border: 2px solid black;
+  background-color: gray;
+}
+
+
+/********** In the desktop view **********/
+@media (min-width: 992px) {
+  .item1, .item2, .item3 {
+    float: left;
+  }
+  .item1{
+    width: 33.3333%;
+  }
+  .item2{
+    width: 33.3333%;
+  }
+  .item3{
+    width: 33.3333%;
+  }
+}
+
+/********** In the tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .item1, .item2, .item3 {
+    float: left;
+  }
+  .item1{
+    width: 50%;
+  }
+  .item2{
+    width: 50%;
+  }
+  .item3{
+    width: 100%;
+  }
+  .item3 .content{
+    width: 95%;
+   }
+   .item3 h2{
+    right: 2.5%;
+   }
+}
+
+/********** In the mobile view **********/
+@media (max-width: 767px) {
+  .item1, .item2, .item3 {
+    float: left;
+  }
+  .item1{
+    width: 100%;
+  }
+  .item2{
+    width: 100%;
+  }
+  .item3{
+    width: 100%;
+  }
+}
